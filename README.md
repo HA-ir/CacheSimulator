@@ -7,7 +7,7 @@ This project implements a cache simulator for analyzing and optimizing cache per
 The project consists of two main components:
 
 1. **Single-Level Cache Simulator**: Implements and analyzes direct-mapped, fully associative, and set-associative caches with different replacement policies.
- 
+
 2. **Multi-Level Cache Simulator**: Extends the analysis to multi-level cache hierarchies (L1, L2, L3) with different configurations and inclusion policies.
 
 ## Dependencies
