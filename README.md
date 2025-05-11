@@ -38,7 +38,7 @@ The single-level cache simulator (`cache_simulator.py`) can be run in different 
 #### Basic Usage
 
 ```bash
-python cache_simulator.py --cache-size 8192 --block-size 64 --associativity 2 --policy LRU
+python3 cache_simulator.py --cache-size 8192 --block-size 64 --associativity 2 --policy LRU
 ```
 
 #### Available Arguments
@@ -55,7 +55,7 @@ python cache_simulator.py --cache-size 8192 --block-size 64 --associativity 2 --
 #### Example: Comparing Replacement Policies
 
 ```bash
-python cache_simulator.py --mode compare-policies --pattern locality
+python3 cache_simulator.py --mode compare-policies --pattern locality
 ```
 
 This will simulate memory accesses with temporal and spatial locality, comparing the performance of different replacement policies.
@@ -63,7 +63,7 @@ This will simulate memory accesses with temporal and spatial locality, comparing
 #### Example: Running Comprehensive Analysis
 
 ```bash
-python cache_simulator.py --mode comprehensive
+python3 cache_simulator.py --mode comprehensive
 ```
 
 This will run a comprehensive analysis with various cache configurations and access patterns, identifying the optimal configuration for each access pattern.
@@ -85,7 +85,7 @@ The multi-level cache simulator (`multilevel_cache_simulator.py`) can be run in 
 #### Basic Usage
 
 ```bash
-python multilevel_cache_simulator.py --l1-size 32768 --l2-size 262144 --l3-size 4194304 --block-size 64 --associativity 4 --policy LRU
+python3 multilevel_cache_simulator.py --l1-size 32768 --l2-size 262144 --l3-size 4194304 --block-size 64 --associativity 4 --policy LRU
 ```
 
 #### Available Arguments
@@ -105,7 +105,7 @@ python multilevel_cache_simulator.py --l1-size 32768 --l2-size 262144 --l3-size 
 #### Example: Comparing Cache Hierarchies
 
 ```bash
-python multilevel_cache_simulator.py --mode compare-hierarchies --pattern locality
+python3 multilevel_cache_simulator.py --mode compare-hierarchies --pattern locality
 ```
 
 This will compare different cache hierarchy configurations with memory accesses exhibiting locality.
@@ -113,7 +113,7 @@ This will compare different cache hierarchy configurations with memory accesses 
 #### Example: Comparing Inclusion Policies
 
 ```bash
-python multilevel_cache_simulator.py --mode compare-policies --pattern mixed
+python3 multilevel_cache_simulator.py --mode compare-policies --pattern mixed
 ```
 
 This will compare inclusive vs exclusive cache hierarchies with a mixed access pattern.
@@ -123,13 +123,13 @@ This will compare inclusive vs exclusive cache hierarchies with a mixed access p
 For both simulators, the `--mode comprehensive` option runs a comprehensive analysis with various configurations and access patterns:
 
 ```bash
-python cache_simulator.py --mode comprehensive
+python3 cache_simulator.py --mode comprehensive
 ```
 
 or
 
 ```bash
-python multilevel_cache_simulator.py --mode comprehensive
+python3 multilevel_cache_simulator.py --mode comprehensive
 ```
 
 ## Generated Visualizations
